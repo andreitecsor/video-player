@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proiect multimedia - tema 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <h1 id="header">VidioPleiăr - 2021</h1>
+
+    <canvas width="854" height="480"></canvas>
+
+    <div class="playlist">
+        <h3>Playlist:</h3>
+        <ul>
+        </ul>
+    </div>
+
+    <h1 id="currentTitle"></h1>
+    <div class="contextMenuFilters">
+        <div class="contextFilterItem" onclick="noFilter()">Basic</div>
+        <div class="contextFilterItem" onclick="mobsterFilter()">Mobster Mode</div>
+        <div class="contextFilterItem" onclick="sunnyFilter()">Sunny Day</div>
+        <div class="contextFilterItem" onclick="darknessFilter()">Darkness</div>
+        <div class="contextFilterItem" onclick="dementiaFilter()">Dementia</div>
+    </div>
+
+
+    <form>
+        <h3>Add a new video in your playlist:</h3>
+        <br>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title">
+        <br>
+        <br>
+
+        <label id="label_video_upload" for="video_upload">Select video</label>
+        <input type="file" id="video_upload" accept="video/mp4"/>
+        <br>
+
+        <p id="upload_status"></p>
+        <br>
+
+        <input type="button" id="upload" value="Upload">
+    </form>
+
+    <div class="contextMenuPlaylist">
+        <div class="contextPlaylistItem" onclick="moveUpVideo()">Move up</div>
+        <div class="contextPlaylistItem" onclick="moveDownVideo()">Move down</div>
+        <div class="contextPlaylistItem" onclick="deleteVideo()">Delete</div>
+    </div>
+
+    <h1 id="footer">Powered by Andrei Tecșor</h1>
+
+
+</body>
+</html>
